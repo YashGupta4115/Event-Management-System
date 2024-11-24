@@ -1,0 +1,14 @@
+.dropdown-menu-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.dropDownMenu-indi-ele{
+    padding: 20px;
+}
+.dropDownMenu-indi-ele:hover{
+    background-color: black;
+    color : white;
+    cursor : pointer;
+}

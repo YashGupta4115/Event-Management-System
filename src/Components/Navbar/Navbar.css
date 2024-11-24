@@ -1,0 +1,57 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+    position: fixed;
+    width : 100%;
+}
+
+.left-navbar{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.navbar-home-ele{
+    margin-right : 1rem;
+}
+
+.mid-navbar{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-navbar{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-indi-element{
+    cursor : pointer;
+    padding : 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-indi-element:hover{
+    background-color: black;
+    color : white;
+}
+
+.navbar-search-open-ele{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+}
+
+.dropdown-menu-navbar{
+    position: absolute;
+    right : 450px;
+    top : 65px;
+}
