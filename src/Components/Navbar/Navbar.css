@@ -5,6 +5,7 @@
     background-color: pink;
     position: fixed;
     width : 100%;
+    font-size: 14px;
 }
 
 .left-navbar{
@@ -32,12 +33,13 @@
 
 .navbar-indi-element{
     cursor : pointer;
-    padding : 20px;
+    padding : 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
 .navbar-indi-element:hover{
     background-color: black;
     color : white;
@@ -52,6 +54,6 @@
 
 .dropdown-menu-navbar{
     position: absolute;
-    right : 450px;
-    top : 65px;
+    right : 320px;
+    top : 70px;
 }
