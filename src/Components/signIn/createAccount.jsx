@@ -23,7 +23,7 @@ function CreateAccountPage() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
 
-      <div className="basis-1/4 bg-gradient-to-br from-pink-900 flex flex-col items-center justify-start text-white pt-29">
+      <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
           <h1 className="text-3xl font-bold">Create an Account-</h1>
@@ -132,7 +132,7 @@ function CreateAccountPage() {
 
           {/* Social Signup Section */}
           <div className="mt-4 ml-5">
-            <h3 className="text-center text-gray-500 mb-4">Or Sign Up With</h3>
+            <h3 className="text-center text-gray-500 mb-4">------ Or Sign Up With ------</h3>
             <div className="flex justify-between items-center gap-4">
               {/* Google */}
               <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
@@ -179,7 +179,7 @@ function CreateAccountPage() {
       </div>
 
       {/* Image 2 */}
-      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-0" style={{ zIndex: 1 }}>
+      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-4" style={{ zIndex: 1 }}>
         <img
           src={logo}
           alt="Intersecting Image"
