@@ -1,3 +1,7 @@
+import BarCharts from "../Charts/Bar/Bar";
+import LineCharts from "../Charts/Line/Line";
+import PieChartComponent from "../Charts/Pie/Pie";
+
 export const admindropDownData = [
     { label: 'Option 1', value: 'option1' },
     { label: 'Option 2', value: 'option2' },
@@ -14,3 +18,10 @@ export const adminDashBoardCards = [
     { title: 'Conduct Event Review', bgColor: '#FF6633', textBg: "#E64B17" },
     { title: 'Track Vendors Performance', bgColor: '#8833FF', textBg: "#7919FF" },
 ]
+
+export const adminDashBoardCards2 = [
+    { title: "User Stats", component: <BarCharts /> },
+    { title: "Site Speed", component: <PieChartComponent /> },
+    { title: "Statistics", component: <LineCharts /> },
+    { title: "Latest Events", component: <BarCharts /> },
+];
