@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
-import login from "../../Assests/login.png"
+import login from "../../Assests/login.png";
 
 function CreateAccountPage() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -17,12 +17,11 @@ function CreateAccountPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
+    console.log("Form Submitted:", formData);
   };
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
-
       <div className="basis-1/4 bg-gradient-to-br from-pink-900 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
@@ -124,7 +123,7 @@ function CreateAccountPage() {
           </button>
 
           <p className="text-sm text-left mt-4 ml-5">
-            Already have an account?{' '}
+            Already have an account?{" "}
             <span className="text-pink-400 font-semibold cursor-pointer hover:underline">
               Login
             </span>
@@ -141,7 +140,9 @@ function CreateAccountPage() {
                   alt="Google"
                   className="w-6 h-6"
                 />
-                <span className="text-gray-700 text-sm font-semibold">Google</span>
+                <span className="text-gray-700 text-sm font-semibold">
+                  Google
+                </span>
               </div>
               {/* Facebook */}
               <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
@@ -150,7 +151,9 @@ function CreateAccountPage() {
                   alt="Facebook"
                   className="w-6 h-6"
                 />
-                <span className="text-gray-700 text-sm font-semibold">Facebook</span>
+                <span className="text-gray-700 text-sm font-semibold">
+                  Facebook
+                </span>
               </div>
               {/* Twitter */}
               <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
@@ -163,31 +166,34 @@ function CreateAccountPage() {
               </div>
             </div>
           </div>
-
         </form>
-
       </div>
 
       {/* Image 1 */}
-      <div className="absolute inset-0 flex items-center justify-start ml-11 mt-5" style={{ zIndex: 1 }}>
+      <div
+        className="absolute inset-0 flex items-center justify-start ml-11 mt-5"
+        style={{ zIndex: 1 }}
+      >
         <img
           src={login}
           alt="Intersecting Image"
           className="absolute w-1/3  transform translate-x-[-50%] mt-20"
-          style={{ left: '23%', pointerEvents: 'none' }} 
+          style={{ left: "23%", pointerEvents: "none" }}
         />
       </div>
 
       {/* Image 2 */}
-      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-0" style={{ zIndex: 1 }}>
+      <div
+        className="absolute inset-0 flex items-center justify-start ml-10 mt-0"
+        style={{ zIndex: 1 }}
+      >
         <img
           src={logo}
           alt="Intersecting Image"
           className="absolute w-42 h-42 transform translate-x-[-60%] -translate-y-[170%]"
-          style={{ left: '10%', pointerEvents: 'none' }} 
+          style={{ left: "10%", pointerEvents: "none" }}
         />
       </div>
-
     </div>
   );
 }
