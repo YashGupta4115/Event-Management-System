@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    left: 0;
+    max-width: 100%;
+    margin: 0 10px;
+    padding: 0 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* z-index: 1000; */
+    background-color: #ddd;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9edc;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  
+  .navbar-container {
+   left: 0;
+  }
+  .main {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* margin-top: 100px; */
+  }
+  
+  .items {
+  
+    margin-top: 50px;
+    width: 70%;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .picture {
+    width: 100px;
+    height: 100px;
+    background-color: #e2b6cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .description {
+    flex: 1;
+  }
+  
+  .price {
+    
+    margin-right: 10px;
+    color: #ff1493;
+    font-weight: bold;
+  }
+  
+  .remove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-more {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .price-details {
+    margin-top: 50px;
+    width: 25%;
+    background-color: #fef5f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .book-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  footer {
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;       /* Align it to the very bottom */
+    left: 0;         /* Align it to the left edge */
+    width: 100%;     /* Make it span the entire width */
+    background-color: #ff9edc; /* Pink background color */
+    color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    z-index: -1000; /* Ensure it stays above other content */
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-top: auto; /* Push the footer to the bottom when the content is short */
+  }
+  
+  
