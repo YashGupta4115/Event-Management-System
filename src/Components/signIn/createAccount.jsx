@@ -22,12 +22,8 @@ function CreateAccountPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
-<<<<<<< HEAD:src/Components/signIn/createAccountPage.jsx
 
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
-=======
-      <div className="basis-1/4 bg-gradient-to-br from-pink-900 flex flex-col items-center justify-start text-white pt-29">
->>>>>>> 55dc521ebbaedee2e710989ab24c1935b8dd879e:src/Components/signIn/createAccount.jsx
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
           <h1 className="text-3xl font-bold">Create an Account-</h1>
@@ -188,14 +184,7 @@ function CreateAccountPage() {
       </div>
 
       {/* Image 2 */}
-<<<<<<< HEAD:src/Components/signIn/createAccountPage.jsx
       <div className="absolute inset-0 flex items-center justify-start ml-10 mt-4" style={{ zIndex: 1 }}>
-=======
-      <div
-        className="absolute inset-0 flex items-center justify-start ml-10 mt-0"
-        style={{ zIndex: 1 }}
-      >
->>>>>>> 55dc521ebbaedee2e710989ab24c1935b8dd879e:src/Components/signIn/createAccount.jsx
         <img
           src={logo}
           alt="Intersecting Image"
