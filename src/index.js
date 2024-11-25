@@ -11,7 +11,7 @@ import CreateAccountPage from '../src/Components/signIn/createAccount';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ScreenContextProvider>
-    <AdminDashboard/>
+    {/* <AdminDashboard/> */}
     {/* // <LoginPage/> */}
     <CreateAccountPage/>
   </ScreenContextProvider>
