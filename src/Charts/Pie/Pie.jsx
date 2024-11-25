@@ -17,7 +17,7 @@ const PieChartComponent = () => {
 
   return (
     <div className={"orders-container"}>
-      <PieChart width={wWidth < 768 ? wWidth * 0.8 : 600} height={wHeight}>
+      <PieChart width={wWidth < 768 ? wWidth * 0.8 : 500} height={wHeight}>
         <Pie
           data={data1}
           dataKey="value"

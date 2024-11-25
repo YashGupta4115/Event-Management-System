@@ -30,7 +30,7 @@ const LineCharts = () => {
   return (
     <div className={"orders-container"}>
       <LineChart
-        width={wWidth < 768 ? wWidth * 0.8 : 600}
+        width={wWidth < 768 ? wWidth * 0.8 : 500}
         height={wHeight}
         data={data}
         majorGridLines="0"
