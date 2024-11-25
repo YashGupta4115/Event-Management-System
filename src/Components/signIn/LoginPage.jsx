@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import logo from "../../Assests/logo.png";
+import login from "../../Assests/login.png";
 
 function LoginPage() {
   const [formData, setFormData] = useState({
@@ -28,7 +30,7 @@ function LoginPage() {
       </div>
 
       {/* Right side */}
-      <div className="basis-3/4 p-10 flex items-center justify-center mb-8">
+      <div className="basis-3/4 p-10 flex items-center justify-center mb-8 ">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-screen-sm"
@@ -89,7 +91,7 @@ function LoginPage() {
                   Remember me?
                 </label>
               </div>
-              <a href="#" className="text-sm text-pink-500">
+              <a href="#" className="text-sm text-pink-500 cursor-pointer hover:underline">
                 Forgot password?
               </a>
           </div>
@@ -133,6 +135,27 @@ function LoginPage() {
           </div>
         </form>
       </div>
+
+      {/* Image 1 */}
+      <div className="absolute inset-0 flex items-center justify-start ml-11 mt-5" style={{ zIndex: 1 }}>
+        <img
+          src={login}
+          alt="Intersecting Image"
+          className="absolute w-1/3  transform translate-x-[-50%] mt-20"
+          style={{ left: '23%', pointerEvents: 'none' }} 
+        />
+      </div>
+
+      {/* Image 2 */}
+      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-0" style={{ zIndex: 1 }}>
+        <img
+          src={logo}
+          alt="Intersecting Image"
+          className="absolute w-42 h-42 transform translate-x-[-60%] -translate-y-[170%]"
+          style={{ left: '10%', pointerEvents: 'none' }} 
+        />
+      </div>
+
     </div>
   );
 }
