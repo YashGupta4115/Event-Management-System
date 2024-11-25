@@ -4,11 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AdminDashboard from './Routes/AdminDashboard/AdminDashboard';
 import { ScreenContextProvider } from './Contexts/screenContext';
+import CreateAccountPage from './Components/signIn/createAccount';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ScreenContextProvider>
-    <AdminDashboard/>
+    {/* <AdminDashboard/> */}
+    <CreateAccountPage/>
   </ScreenContextProvider>
 );
 reportWebVitals();
