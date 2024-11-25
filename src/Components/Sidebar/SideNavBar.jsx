@@ -1,54 +1,33 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useContext, useState } from "react";
+import "../Navbar/Navbar.css";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import { admindropDownData } from "../../Assests/data";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosNotifications } from "react-icons/io";
-import { CiSearch } from "react-icons/ci";
+import { screenContext } from "../../Contexts/screenContext";
+import { IoMdClose } from "react-icons/io";
 
-const Navbar = () => {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+const SideNavBar = () => {
   const [isMyAccountOpen, setIsMyAccountOpen] = useState(false);
-
-  const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
-  };
+  const { toggleNav } = useContext(screenContext);
 
   const toggleAccountOpen = () => {
     setIsMyAccountOpen(!isMyAccountOpen);
   };
-
   return (
     <>
       <div className="navbar-container">
-        <div className="left-navbar">
-          <div className="navbar-home-ele navbar-indi-element">Home</div>
-          {!isSearchOpen ? (
-            <div
-              className="navbar-search-close-ele navbar-indi-element"
-              onClick={toggleSearch}
-            >
-              <CiSearch style={{ fontSize: "18px" }} />
-            </div>
-          ) : (
-            <div className="navbar-search-open-ele navbar-indi-element">
-              <input type="text" />
-              <div
-                style={{
-                  marginLeft: "10px",
-                }}
-                onClick={toggleSearch}
-              >
-                <CiSearch style={{ fontSize: "18px" }} />
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="mid-navbar">
+        <div className="top-navbar">
+          <div
+            className="navbar-home-ele navbar-indi-element"
+            onClick={toggleNav}
+          >
+            <IoMdClose />
+          </div>
           <div className="navbar-logo-ele navbar-indi-element">Logo</div>
         </div>
-        <div className="right-navbar">
+        <div className="middle-navbar">
           <div
             className="navbar-myact-ele navbar-indi-element"
             onClick={toggleAccountOpen}
@@ -83,4 +62,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SideNavBar;

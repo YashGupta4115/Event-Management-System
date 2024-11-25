@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import { screenContext } from "../../Contexts/screenContext";
+import NavBarSmall from "../../Components/Navbar/NavBarSmall";
 
 const AdminDashboard = () => {
+  const { width } = useContext(screenContext);
+
   return (
     <div className="AdminDashboard-contianer">
-      <Navbar />
-      {/* <h1>Admin Dashboard</h1> */}
+      {width <= 768 ? <NavBarSmall /> : <Navbar />}
     </div>
   );
 };

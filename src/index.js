@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AdminDashboard from './Routes/AdminDashboard/AdminDashboard';
+import { ScreenContextProvider } from './Contexts/screenContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ScreenContextProvider>
     <AdminDashboard/>
-  </React.StrictMode>
+  </ScreenContextProvider>
 );
 reportWebVitals();
