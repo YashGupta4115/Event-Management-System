@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    color : black;
 }
 
 .dropDownMenu-indi-ele{
-    padding: 20px;
+    padding: 10px;
 }
 .dropDownMenu-indi-ele:hover{
     background-color: black;
