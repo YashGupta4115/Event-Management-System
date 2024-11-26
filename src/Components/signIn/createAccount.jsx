@@ -118,12 +118,12 @@ function CreateAccountPage() {
 
           <button
             type="submit"
-            className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-8"
+            className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
           >
             Create Account
           </button>
 
-          <p className="text-sm text-left mt-4">
+          <p className="text-sm text-left mt-4 ml-5">
             Already have an account?{' '}
             <span className="text-pink-400 font-semibold cursor-pointer hover:underline">
               Login
@@ -131,7 +131,7 @@ function CreateAccountPage() {
           </p>
 
           {/* Social Signup Section */}
-          <div className="mt-10">
+          <div className="mt-4 ml-5">
             <h3 className="text-center text-gray-500 mb-4">Or Sign Up With</h3>
             <div className="flex justify-between items-center gap-4">
               {/* Google */}
