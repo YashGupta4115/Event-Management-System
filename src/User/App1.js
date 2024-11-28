@@ -92,11 +92,11 @@ function App1() {
         <button className="search-button">Search</button>
       </div>
 
-      <div className="background">
+      <div className="app1-background">
         <h2 className="subtitle">Explore Venues & Services</h2>
       </div>
 
-      <div className="content-sections">
+      <div className="grid-layout-app3">
         <div className="card">
           <h3>Events & Descriptions</h3>
         </div>

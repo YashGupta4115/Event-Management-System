@@ -24,11 +24,11 @@ function App3() {
         <button className="search-button">Explore</button>
       </div>
 
-      <div className="background">
+      <div className="background-app3">
         <h2 className="subtitle">Book Your Event Effortlessly</h2>
       </div>
 
-      <div className="grid-layout">
+      <div className="grid-layout-app3">
         <div className="card">Birthday Booking</div>
         <div className="card">Descriptions</div>
         <div className="card">Birthday Booking</div>

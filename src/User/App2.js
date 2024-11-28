@@ -25,7 +25,7 @@ function App2() {
         <button className="search-button">Explore</button>
       </div>
 
-      <div className="content-sections">
+      <div className="app2-content-sections">
         <div className="card">Samples</div>
         <div className="card">Samples</div>
         <div className="card">Samples</div>
