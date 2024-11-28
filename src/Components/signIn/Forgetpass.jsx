@@ -1,11 +1,12 @@
+
 import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
 
-function LoginPage() {
+function Forgetpass() {
   const [formData, setFormData] = useState({
     email: "",
-    password: "",
+    name: "",
   });
 
   const handleChange = (e) => {
@@ -49,7 +50,7 @@ function LoginPage() {
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
-          <p className="mt-1 text-2xl">Log in and let the planning begin!</p>
+          <p className="mt-1 text-2xl">Lost your way? Let's help you back on track!</p>
         </div>
       </div>
 
@@ -61,8 +62,34 @@ function LoginPage() {
           className="w-full max-w-screen-sm z-10 relative"
         >
           <h2 className="text-3xl font-bold text-gray-700 mb-10 text-center ">
-            Login
+                Forgot Password
           </h2>
+
+                {/* Password Field */}
+                <div className="mb-4 relative">
+                <input
+                  type="name"
+                  id="name"
+                  placeholder=" "
+                  className="border rounded-lg p-3 w-full peer"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <label
+                  htmlFor="password"
+                  className={`absolute left-3 transform transition-all 
+                    ${formData.name
+                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                      : 'top-3 text-base text-gray-400'} 
+                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
+                >
+                  Enter Name
+                </label>
+              </div>
+
 
           {/* Email Field */}
           <div className="mb-4 relative">
@@ -89,95 +116,17 @@ function LoginPage() {
             </label>
           </div>
 
-
-
-              {/* Password Field */}
-              <div className="mb-4 relative">
-                <input
-                  type="password"
-                  id="password"
-                  placeholder=" "
-                  className="border rounded-lg p-3 w-full peer"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-                <label
-                  htmlFor="password"
-                  className={`absolute left-3 transform transition-all 
-                    ${formData.password
-                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                      : 'top-3 text-base text-gray-400'} 
-                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
-                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-                >
-                  Password
-                </label>
-              </div>
-
-
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
           >
-            Login
+            Sent OTP
           </button>
-          
-          <div className="flex justify-between items-center mb-4">
-              <div className="cursor-pointer">
-                <input type="checkbox" id="remember" className="mr-2 cursor-pointer" />
-                <label htmlFor="remember" className="text-sm cursor-pointer">
-                  Remember me?
-                </label>
-              </div>
-              <a href="#" className="text-sm text-pink-500">
-                Forgot password?
-              </a>
-            </div>
-
-          {/* Social Signup Section */}
-          <div className="mt-4 ml-5">
-            <h3 className="text-center text-gray-500 mb-4">------ Or Sign Up With ------</h3>
-            <div className="flex justify-between items-center gap-4">
-              {/* Google */}
-              <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
-                <img
-                  src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"
-                  alt="Google"
-                  className="w-6 h-6"
-                />
-                <span className="text-gray-700 text-sm font-semibold">
-                  Google
-                </span>
-              </div>
-              {/* Facebook */}
-              <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                  alt="Facebook"
-                  className="w-6 h-6"
-                />
-                <span className="text-gray-700 text-sm font-semibold">
-                  Facebook
-                </span>
-              </div>
-              {/* Twitter */}
-              <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg"
-                  alt="X"
-                  className="w-6 h-6"
-                />
-                <span className="text-gray-700 text-sm font-semibold">X</span>
-              </div>
-            </div>
-          </div>
-        </form>
+      </form>
       </div>
 
-      {/* Image 1 */}
-      <div
+            {/* Image 1 */}
+            <div
         className="absolute inset-0 flex items-center justify-start ml-11 mt-5"
         style={{ zIndex: 1 }}
       >
@@ -203,4 +152,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Forgetpass;
