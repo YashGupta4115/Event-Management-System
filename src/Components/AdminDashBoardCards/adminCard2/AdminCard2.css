@@ -1,0 +1,18 @@
+.adminDashBoard-cards2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top : 100px;
+}
+
+.adminDashBoard-cards2-container{
+    display: flex;
+    background-color: #FFCC66;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
