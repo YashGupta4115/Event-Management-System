@@ -1,0 +1,121 @@
+/*.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .header {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    color: #ff69b4;
+  }
+  
+  .header-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .search-section {
+    margin: 20px 0;
+  }
+  
+  .search-bar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .background {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+    */
+    .app {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .header {
+        background-color: #f7f7f7;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+        color: #ff69b4;
+    }
+    
+    .header-links a {
+        margin: 0 10px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .search-section {
+        margin: 20px 0;
+    }
+    
+    .search-bar {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    .search-button {
+        padding: 10px 20px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+    .background {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+        background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240703/pngtree-event-management-outdoor-background-image_15934727.jpg"); /* Replace with your image URL */
+        background-size: cover; 
+        background-position: center; 
+        color: white; 
+    }
+    .card {
+        background-color: white;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
