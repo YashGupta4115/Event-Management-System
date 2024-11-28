@@ -7,6 +7,10 @@
     /* Full viewport height */
     overflow: hidden;
     /* Prevent content overflow */
+    position: relative;
+    z-index: 2;
+    /* Ensures it is on top of the background image */
+    background-image: url('../../Assests/login.png');
 }
 
 /* Fixed navbar styling */
@@ -17,6 +21,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    /* High enough to stay above other components */
     background-color: #fff;
     /* Adjust based on your theme */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -40,6 +45,25 @@
     /* Center align content */
     gap: 1rem;
     /* Spacing between cards */
-    background-color: #f9f9f9;
-    /* Optional background color */
+    background-color: rgba(249, 249, 249, 0.9);
+    /* Slight transparency for a layered look */
 }
+
+/* Background image styling
+.bgImage-all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    /* Ensure it's below the dashboard container */
+    
+    /* Replace with your image path
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    /* Optional: adjust transparency
+    pointer-events: none;
+    /* Prevent interactions with the image
+}*/
