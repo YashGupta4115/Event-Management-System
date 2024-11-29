@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
 
-function CreateAccountPage() {
+function LoginPage() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
     email: "",
     password: "",
   });
@@ -46,72 +44,25 @@ function CreateAccountPage() {
         </button>
       </div>
 
+      {/* Left side */}
+
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
-          <h1 className="text-3xl font-bold">Create an Account-</h1>
-          <p className="mt-1 text-2xl">your dream event awaits!</p>
+          <p className="mt-1 text-2xl">Log in and let the planning begin!</p>
         </div>
       </div>
 
-      <div className="basis-3/4 p-10 flex items-center justify-center mb-8">
+      {/* Right side */}
+
+      <div className="basis-3/4 p-10 flex items-center justify-center mb-8 ">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-screen-sm z-10 relative"
         >
           <h2 className="text-3xl font-bold text-gray-700 mb-10 text-center ">
-            Create an Account
+            Login
           </h2>
-
-          {/* Name Fields */}
-          <div className="flex gap-4 mb-4">
-            <div className="flex-1 relative">
-              <input
-                type="text"
-                id="firstName"
-                placeholder=" "
-                className="border rounded-lg p-3 w-full peer"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
-              <label
-                htmlFor="firstName"
-                className={`absolute left-3 transform transition-all 
-                  ${formData.firstName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
-                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
-                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-              >
-                First Name
-              </label>
-            </div>
-            <div className="flex-1 relative">
-              <input
-                type="text"
-                id="lastName"
-                placeholder=" "
-                className="border rounded-lg p-3 w-full peer"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
-              <label
-                htmlFor="lastName"
-                className={`absolute left-3 transform transition-all 
-                  ${formData.lastName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
-                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
-                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-              >
-                Last Name
-              </label>
-            </div>
-          </div>
 
           {/* Email Field */}
           <div className="mb-4 relative">
@@ -138,17 +89,17 @@ function CreateAccountPage() {
             </label>
           </div>
 
-          {/* Password Field */}
-          <div className="mb-4 relative">
-            <input
-              type="password"
-              id="password"
-              placeholder=" "
-              className="border rounded-lg p-3 w-full peer"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
+              {/* Password Field */}
+              <div className="mb-4 relative">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder=" "
+                  className="border rounded-lg p-3 w-full peer"
+                  value={formData.password}
+                  onChange={handleChange}
+                  required
+                />
                 <label
                   htmlFor="password"
                   className={`absolute left-3 transform transition-all 
@@ -161,21 +112,27 @@ function CreateAccountPage() {
                 >
                   Password
                 </label>
-          </div>
+              </div>
+
 
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
           >
-            Create Account
+            Login
           </button>
-
-          <p className="text-sm text-left mt-4 ml-5">
-            Already have an account?{" "}
-            <span className="text-pink-400 font-semibold cursor-pointer hover:underline">
-              Login
-            </span>
-          </p>
+          
+          <div className="flex justify-between items-center mb-4">
+              <div className="cursor-pointer">
+                <input type="checkbox" id="remember" className="mr-2 cursor-pointer" />
+                <label htmlFor="remember" className="text-sm cursor-pointer">
+                  Remember me?
+                </label>
+              </div>
+              <a href="#" className="text-sm text-pink-500">
+                Forgot password?
+              </a>
+            </div>
 
           {/* Social Signup Section */}
           <div className="mt-4 ml-5">
@@ -244,4 +201,4 @@ function CreateAccountPage() {
   );
 }
 
-export default CreateAccountPage;
+export default LoginPage;
