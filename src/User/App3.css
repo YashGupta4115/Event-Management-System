@@ -1,23 +1,4 @@
-/* Adjustments for grid-based layout */
-/*.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  */
-  /*.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-image: url('https://images.unsplash.com/photo-1653821355168-144695e5c0e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXZlbnQlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-    */
+
     .grid-layout-app3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 

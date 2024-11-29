@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+<<<<<<< HEAD
 import {
   // createBrowserRouter,
   BrowserRouter
@@ -27,14 +28,23 @@ import { DataContextProvider } from './Contexts/dataContext';
 //     element:<App3/>,
 //   },
 // ]);
+=======
+import CreateAccount from '../src/Components/signIn/createAccount';
+
+import reportWebVitals from './reportWebVitals';
+import AdminDashboard from './Routes/AdminDashboard/AdminDashboard';
+import { ScreenContextProvider } from './Contexts/screenContext';
+import LoginPage from '../src/Components/signIn/LoginPage';
+import Resetpass from '../src/Components/signIn/Resetpass';
+import Popup from './Components/signIn/Popup';
+import Forgetpass from './Components/signIn/Forgetpass';
+>>>>>>> aba8ef7dd2089653ec93c0045a0c8a4e98295935
 
 
-
-//import reportWebVitals from './reportWebVitals';
-//import SignIn from './Components/signIn/SignIn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+<<<<<<< HEAD
   <React.StrictMode>
     <BrowserRouter>
     <ScreenContextProvider>
@@ -52,3 +62,15 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 //reportWebVitals();
+=======
+  <ScreenContextProvider>
+    {/* <AdminDashboard/> */}
+     {/* {<LoginPage/>} */}
+    {<CreateAccount/>}
+    {/* {<Resetpass/>} */}
+    {/* {<Popup/>} */}
+    {/* {<Forgetpass/>} */}
+  </ScreenContextProvider>
+);
+reportWebVitals();
+>>>>>>> aba8ef7dd2089653ec93c0045a0c8a4e98295935
