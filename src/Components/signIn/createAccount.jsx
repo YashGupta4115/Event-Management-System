@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
+import { useNavigate } from "react-router-dom";
 
 function CreateAccountPage() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,6 +24,27 @@ function CreateAccountPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
+      <div className="absolute top-4 right-4 z-20">
+        <button
+          onClick={() => console.log("Close button clicked")}
+          className="text-pink-700 hover:text-red-500 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
 
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
@@ -54,7 +77,15 @@ function CreateAccountPage() {
               />
               <label
                 htmlFor="firstName"
-                className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+                className={`absolute left-3 transform transition-all 
+                  ${
+                    formData.firstName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
+                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
               >
                 First Name
               </label>
@@ -71,7 +102,15 @@ function CreateAccountPage() {
               />
               <label
                 htmlFor="lastName"
-                className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+                className={`absolute left-3 transform transition-all 
+                  ${
+                    formData.lastName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
+                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
               >
                 Last Name
               </label>
@@ -91,7 +130,15 @@ function CreateAccountPage() {
             />
             <label
               htmlFor="email"
-              className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+              className={`absolute left-3 transform transition-all 
+                ${
+                  formData.email
+                    ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                    : "top-3 text-base text-gray-400"
+                } 
+                peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
             >
               Email
             </label>
@@ -110,7 +157,15 @@ function CreateAccountPage() {
             />
             <label
               htmlFor="password"
-              className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+              className={`absolute left-3 transform transition-all 
+                    ${
+                      formData.password
+                        ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                        : "top-3 text-base text-gray-400"
+                    } 
+                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
             >
               Password
             </label>
@@ -125,14 +180,19 @@ function CreateAccountPage() {
 
           <p className="text-sm text-left mt-4 ml-5">
             Already have an account?{" "}
-            <span className="text-pink-400 font-semibold cursor-pointer hover:underline">
+            <span
+              className="text-pink-400 font-semibold cursor-pointer hover:underline"
+              onClick={() => navigate("/sign-up")}
+            >
               Login
             </span>
           </p>
 
           {/* Social Signup Section */}
           <div className="mt-4 ml-5">
-            <h3 className="text-center text-gray-500 mb-4">------ Or Sign Up With ------</h3>
+            <h3 className="text-center text-gray-500 mb-4">
+              ------ Or Sign Up With ------
+            </h3>
             <div className="flex justify-between items-center gap-4">
               {/* Google */}
               <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
@@ -184,7 +244,10 @@ function CreateAccountPage() {
       </div>
 
       {/* Image 2 */}
-      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-4" style={{ zIndex: 1 }}>
+      <div
+        className="absolute inset-0 flex items-center justify-start ml-10 mt-4"
+        style={{ zIndex: 1 }}
+      >
         <img
           src={logo}
           alt="Intersecting Image"

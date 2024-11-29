@@ -1,8 +1,14 @@
 
+<<<<<<< HEAD
     /*.app2-content-sections {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+=======
+    .app2-content-sections {
+        display: flex;
+        justify-content: space-between;
+>>>>>>> 9ec6b85df3af000ed48c05f6e3347461857529c7
         margin: 20px;
         padding: 20px;
         /* background-image: url('https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnQlMjBwbGFubmluZ3xlbnwwfHwwfHx8MA%3D%3D'); Replace with the actual image URL */
@@ -21,6 +27,10 @@
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 10px;
+      }
+
+      .card{
+        width : 100%;
       }
       
       .card {
