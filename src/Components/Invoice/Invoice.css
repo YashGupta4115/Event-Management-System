@@ -5,7 +5,9 @@
     min-height: 96.4vh;
     font-family: Arial, sans-serif;
   }
-  
+  .date-input{
+    color: black;
+  }
   .content {
     text-align: center;
     padding: 20px;
