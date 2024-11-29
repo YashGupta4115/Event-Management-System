@@ -89,8 +89,6 @@ function LoginPage() {
             </label>
           </div>
 
-
-
               {/* Password Field */}
               <div className="mb-4 relative">
                 <input

@@ -23,6 +23,29 @@ function CreateAccountPage() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
 
+        {/* Cross Icon */}
+        <div className="absolute top-4 right-4 z-20">
+        <button
+          onClick={() => console.log("Close button clicked")}
+          className="text-pink-700 hover:text-red-500 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
@@ -54,7 +77,13 @@ function CreateAccountPage() {
               />
               <label
                 htmlFor="firstName"
-                className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+                className={`absolute left-3 transform transition-all 
+                  ${formData.firstName
+                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                    : 'top-3 text-base text-gray-400'} 
+                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
               >
                 First Name
               </label>
@@ -71,7 +100,13 @@ function CreateAccountPage() {
               />
               <label
                 htmlFor="lastName"
-                className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+                className={`absolute left-3 transform transition-all 
+                  ${formData.lastName
+                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                    : 'top-3 text-base text-gray-400'} 
+                  peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                  peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                  peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
               >
                 Last Name
               </label>
@@ -91,7 +126,13 @@ function CreateAccountPage() {
             />
             <label
               htmlFor="email"
-              className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
+              className={`absolute left-3 transform transition-all 
+                ${formData.email
+                  ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                  : 'top-3 text-base text-gray-400'} 
+                peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
             >
               Email
             </label>
@@ -108,12 +149,18 @@ function CreateAccountPage() {
               onChange={handleChange}
               required
             />
-            <label
-              htmlFor="password"
-              className="absolute left-3 top-3 text-gray-500 text-sm transform transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1"
-            >
-              Password
-            </label>
+                <label
+                  htmlFor="password"
+                  className={`absolute left-3 transform transition-all 
+                    ${formData.password
+                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                      : 'top-3 text-base text-gray-400'} 
+                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
+                >
+                  Password
+                </label>
           </div>
 
           <button

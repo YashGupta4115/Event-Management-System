@@ -1,12 +1,14 @@
-
 import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
 
-function Forgetpass() {
+
+function CreateAccountPage() {
+
   const [formData, setFormData] = useState({
-    email: "",
-    name: "",
+    otp: "",
+    password: "",
+    confirmpassword: "",
   });
 
   const handleChange = (e) => {
@@ -45,8 +47,6 @@ function Forgetpass() {
         </button>
       </div>
 
-      {/* Left side */}
-
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
@@ -54,79 +54,108 @@ function Forgetpass() {
         </div>
       </div>
 
-      {/* Right side */}
-
-      <div className="basis-3/4 p-10 flex items-center justify-center mb-8 ">
+      <div className="basis-3/4 p-10 flex items-center justify-center mb-8">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-screen-sm z-10 relative"
         >
           <h2 className="text-3xl font-bold text-gray-700 mb-10 text-center ">
-                Forgot Password
+            Reset Password
           </h2>
 
-                {/* Password Field */}
-                <div className="mb-4 relative">
-                <input
-                  type="name"
-                  id="name"
-                  placeholder=" "
-                  className="border rounded-lg p-3 w-full peer"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+          {/* OTP Field */}
+          <div className="mb-4 relative">
+            <input
+              type="otp"
+              id="otp"
+              placeholder=" "
+              className="border rounded-lg p-3 w-full peer mb-7"
+              value={formData.otp}
+              onChange={handleChange}
+              required
+            />
                 <label
-                  htmlFor="name"
+                  htmlFor="otp"
                   className={`absolute left-3 transform transition-all 
-                    ${formData.name
+                    ${formData.otp
                       ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
                       : 'top-3 text-base text-gray-400'} 
                     peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                     peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                     peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
                 >
-                  Enter Name
+                  Enter OTP
                 </label>
-              </div>
+          </div>
 
-
-          {/* Email Field */}
+          {/* Password Field */}
           <div className="mb-4 relative">
             <input
-              type="email"
-              id="email"
+              type="password"
+              id="password"
               placeholder=" "
-              className="border rounded-lg p-3 w-full peer mb-7"
-              value={formData.email}
+              className="border rounded-lg p-3 w-full peer"
+              value={formData.password}
               onChange={handleChange}
               required
             />
-            <label
-              htmlFor="email"
-              className={`absolute left-3 transform transition-all 
-                ${formData.email
-                  ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                  : 'top-3 text-base text-gray-400'} 
-                peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
-                peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
-                peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-            >
-              Email
-            </label>
+                <label
+                  htmlFor="password"
+                  className={`absolute left-3 transform transition-all 
+                    ${formData.password
+                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                      : 'top-3 text-base text-gray-400'} 
+                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
+                >
+                  Password
+                </label>
+          </div>
+
+            {/* confirm Password Field */}
+            <div className="mb-4 relative">
+            <input
+              type="confirmpassword"
+              id="confirmpassword"
+              placeholder=" "
+              className="border rounded-lg p-3 w-full peer"
+              value={formData.confirmpassword}
+              onChange={handleChange}
+              required
+            />
+                <label
+                  htmlFor="confirmpassword"
+                  className={`absolute left-3 transform transition-all 
+                    ${formData.confirmpassword
+                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
+                      : 'top-3 text-base text-gray-400'} 
+                    peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
+                    peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
+                    peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
+                >
+                  Confirm Password
+                </label>
           </div>
 
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
           >
-            Sent OTP
+            Reset Password
           </button>
-      </form>
+
+          <p className="text-sm text-center mt-10 ml-5">
+            Back to{" "}
+            <span className="text-pink-400 font-semibold cursor-pointer hover:underline" onClick={() => ("/login")}>
+              Login
+            </span>
+          </p>
+        </form>
       </div>
 
-        {/* Image 1 */}
-        <div
+      {/* Image 1 */}
+      <div
         className="absolute inset-0 flex items-center justify-start ml-11 mt-5"
         style={{ zIndex: 1 }}
       >
@@ -152,4 +181,4 @@ function Forgetpass() {
   );
 }
 
-export default Forgetpass;
+export default CreateAccountPage;
