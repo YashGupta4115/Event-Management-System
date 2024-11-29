@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const screenContext = createContext();
 
 export const ScreenContextProvider = ({ children }) => {
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(0);
   const [isNavOpen, setIsNavBarOpen] = useState(false);
 
   const toggleNav = () => {
@@ -13,6 +13,7 @@ export const ScreenContextProvider = ({ children }) => {
   useEffect(() => {
     const handleReszie = () => {
       setWidth(window.innerWidth);
+      console.log(width);
     };
 
     window.addEventListener("resize", handleReszie);

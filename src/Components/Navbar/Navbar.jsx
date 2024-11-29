@@ -6,8 +6,10 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosNotifications } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMyAccountOpen, setIsMyAccountOpen] = useState(false);
 
@@ -23,7 +25,12 @@ const Navbar = () => {
     <>
       <div className="navbar-container">
         <div className="left-navbar">
-          <div className="navbar-home-ele navbar-indi-element">Home</div>
+          <div
+            className="navbar-home-ele navbar-indi-element"
+            onClick={() => navigate("/")}
+          >
+            Home
+          </div>
           {!isSearchOpen ? (
             <div
               className="navbar-search-close-ele navbar-indi-element"
@@ -70,7 +77,10 @@ const Navbar = () => {
           <div className="navbar-contact-ele navbar-indi-element">
             Contact Us
           </div>
-          <div className="navbar-login-ele navbar-indi-element">
+          <div
+            className="navbar-login-ele navbar-indi-element"
+            onClick={() => navigate("/login")}
+          >
             Login/Register
           </div>
           <div className="navbar-notify-ele navbar-indi-element">

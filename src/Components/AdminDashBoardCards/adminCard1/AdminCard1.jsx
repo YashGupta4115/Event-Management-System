@@ -3,8 +3,10 @@ import { adminDashBoardCards } from "../../../Assests/data";
 import { CiMenuKebab } from "react-icons/ci";
 import { IoAddCircleOutline } from "react-icons/io5";
 import "./AdminCard1.css";
+import { useNavigate } from "react-router-dom";
 
 const AdminCard1 = () => {
+  const navigate = useNavigate();
   return (
     <div className="adminDashBoard-cards1">
       {adminDashBoardCards.map((items, index) => {
@@ -12,7 +14,7 @@ const AdminCard1 = () => {
         let textBgColor = items.textBg;
         let textColor = color === "#FFFFFF" ? "black" : "white";
 
-        console.log(color, textColor, textBgColor);
+        // console.log(color, textColor, textBgColor);
 
         return (
           <div
@@ -27,7 +29,11 @@ const AdminCard1 = () => {
               </div>
             </div>
             <div className="adminDashBoard-cards-bottom">
-              <div className="view-all-container" style={{ cursor: "pointer" }}>
+              <div
+                className="view-all-container"
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate(items.route)}
+              >
                 <IoAddCircleOutline />
               </div>
               <div

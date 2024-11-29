@@ -1,0 +1,41 @@
+.createEvent-container{
+    padding: 10px;
+    margin : 0 auto;
+    width : 400px;
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.createEvent-form{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding : 20px;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input,
+select{
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top : 10px;
+}

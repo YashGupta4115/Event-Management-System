@@ -2,6 +2,7 @@
     .app {
         font-family: Arial, sans-serif;
         text-align: center;
+        margin-top : 10rem;
     }
     
     .header {
@@ -44,16 +45,18 @@
         margin: 20px 0;
         padding: 20px;
         background-color: #f2f2f2;
-        /*background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240703/pngtree-event-management-outdoor-background-image_15934727.jpg");*/
         background-size: cover; 
         background-position: center; 
-        color: white; 
+        color: black; 
+        margin-top : 3rem;
+        margin-bottom: 3rem;
     }
     .card {
         background-color: white;
         padding: 15px;
         margin: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
     
    

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
+import { useNavigate } from "react-router-dom";
 
 function CreateAccountPage() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,9 +24,7 @@ function CreateAccountPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
-
-        {/* Cross Icon */}
-        <div className="absolute top-4 right-4 z-20">
+      <div className="absolute top-4 right-4 z-20">
         <button
           onClick={() => console.log("Close button clicked")}
           className="text-pink-700 hover:text-red-500 focus:outline-none"
@@ -78,9 +78,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="firstName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.firstName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.firstName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -101,9 +103,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="lastName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.lastName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.lastName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -127,9 +131,11 @@ function CreateAccountPage() {
             <label
               htmlFor="email"
               className={`absolute left-3 transform transition-all 
-                ${formData.email
-                  ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                  : 'top-3 text-base text-gray-400'} 
+                ${
+                  formData.email
+                    ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                    : "top-3 text-base text-gray-400"
+                } 
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                 peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                 peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -149,18 +155,20 @@ function CreateAccountPage() {
               onChange={handleChange}
               required
             />
-                <label
-                  htmlFor="password"
-                  className={`absolute left-3 transform transition-all 
-                    ${formData.password
-                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                      : 'top-3 text-base text-gray-400'} 
+            <label
+              htmlFor="password"
+              className={`absolute left-3 transform transition-all 
+                    ${
+                      formData.password
+                        ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                        : "top-3 text-base text-gray-400"
+                    } 
                     peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                     peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                     peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-                >
-                  Password
-                </label>
+            >
+              Password
+            </label>
           </div>
 
           <button
@@ -172,14 +180,19 @@ function CreateAccountPage() {
 
           <p className="text-sm text-left mt-4 ml-5">
             Already have an account?{" "}
-            <span className="text-pink-400 font-semibold cursor-pointer hover:underline">
+            <span
+              className="text-pink-400 font-semibold cursor-pointer hover:underline"
+              onClick={() => navigate("/sign-up")}
+            >
               Login
             </span>
           </p>
 
           {/* Social Signup Section */}
           <div className="mt-4 ml-5">
-            <h3 className="text-center text-gray-500 mb-4">------ Or Sign Up With ------</h3>
+            <h3 className="text-center text-gray-500 mb-4">
+              ------ Or Sign Up With ------
+            </h3>
             <div className="flex justify-between items-center gap-4">
               {/* Google */}
               <div className="flex items-center gap-2 p-3 border rounded-lg w-1/3 hover:bg-gray-100 cursor-pointer">
@@ -231,7 +244,10 @@ function CreateAccountPage() {
       </div>
 
       {/* Image 2 */}
-      <div className="absolute inset-0 flex items-center justify-start ml-10 mt-4" style={{ zIndex: 1 }}>
+      <div
+        className="absolute inset-0 flex items-center justify-start ml-10 mt-4"
+        style={{ zIndex: 1 }}
+      >
         <img
           src={logo}
           alt="Intersecting Image"
@@ -239,7 +255,6 @@ function CreateAccountPage() {
           style={{ left: "10%", pointerEvents: "none" }}
         />
       </div>
-      
     </div>
   );
 }
