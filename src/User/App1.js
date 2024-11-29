@@ -8,7 +8,6 @@ function App1() {
   const navigate = useNavigate();
   return (
     <div className="app">
-
       <div className="search-section">
         <input
           type="text"
