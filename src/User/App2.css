@@ -1,11 +1,4 @@
-/* Similar to app1.css with adjustments for layout */
-/*.content-sections {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 20px;
-  }
-    */
+
     .app2-content-sections {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
