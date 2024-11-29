@@ -24,33 +24,6 @@ function CreateAccountPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
-<<<<<<< HEAD
-=======
-
-        {/* Cross Icon */}
-        <div className="absolute top-4 right-4 z-20">
-        <button
-          onClick={() => console.log("Close button clicked")}
-          className="text-pink-700 hover:text-red-500 focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-
->>>>>>> aba8ef7dd2089653ec93c0045a0c8a4e98295935
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
