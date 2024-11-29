@@ -1,46 +1,28 @@
+.app2-content-sections {
+  display: flex;  /* Use flexbox for vertical layout */
+  flex-direction: column;  /* Stack items vertically */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  gap: 20px;  /* Space between cards */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  height: 400px;  /* Set a fixed height for the scrollable container */
+}
 
-<<<<<<< HEAD
-    /*.app2-content-sections {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-=======
-    .app2-content-sections {
-        display: flex;
-        justify-content: space-between;
->>>>>>> 9ec6b85df3af000ed48c05f6e3347461857529c7
-        margin: 20px;
-        padding: 20px;
-        /* background-image: url('https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnQlMjBwbGFubmluZ3xlbnwwfHwwfHx8MA%3D%3D'); Replace with the actual image URL */
-       /* background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        border-radius: 10px; 
-      }*/
-      .app2-content-sections {
-        display: grid; /* Use grid layout */
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-        gap: 20px; /* Space between cards */
-        margin: 20px;
-        padding: 20px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-      }
+.card {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  flex-shrink: 0;  /* Prevent cards from shrinking */
+  width: 100%;  /* Ensure cards take up full width of the container */
+}
 
-      .card{
-        width : 100%;
-      }
-      
-      .card {
-        background-color: #f4f4f4;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      
-      
-     
+.card:hover {
+  background-color: #ff69b4;
+  color: white;
+}
