@@ -24,11 +24,7 @@ function CreateAccountPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen relative">
-<<<<<<< HEAD
-=======
-
-        {/* Cross Icon */}
-        <div className="absolute top-4 right-4 z-20">
+      <div className="absolute top-4 right-4 z-20">
         <button
           onClick={() => console.log("Close button clicked")}
           className="text-pink-700 hover:text-red-500 focus:outline-none"
@@ -50,7 +46,6 @@ function CreateAccountPage() {
         </button>
       </div>
 
->>>>>>> aba8ef7dd2089653ec93c0045a0c8a4e98295935
       <div className="basis-1/4 bg-gradient-to-br from-black  to-pink-950 flex flex-col items-center justify-start text-white pt-29">
         <div className="p-5 mt-28">
           <h1 className="text-4xl font-semibold">Hello,</h1>
@@ -83,9 +78,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="firstName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.firstName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.firstName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -106,9 +103,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="lastName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.lastName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.lastName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -132,9 +131,11 @@ function CreateAccountPage() {
             <label
               htmlFor="email"
               className={`absolute left-3 transform transition-all 
-                ${formData.email
-                  ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                  : 'top-3 text-base text-gray-400'} 
+                ${
+                  formData.email
+                    ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                    : "top-3 text-base text-gray-400"
+                } 
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                 peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                 peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -154,18 +155,20 @@ function CreateAccountPage() {
               onChange={handleChange}
               required
             />
-                <label
-                  htmlFor="password"
-                  className={`absolute left-3 transform transition-all 
-                    ${formData.password
-                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                      : 'top-3 text-base text-gray-400'} 
+            <label
+              htmlFor="password"
+              className={`absolute left-3 transform transition-all 
+                    ${
+                      formData.password
+                        ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                        : "top-3 text-base text-gray-400"
+                    } 
                     peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                     peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                     peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-                >
-                  Password
-                </label>
+            >
+              Password
+            </label>
           </div>
 
           <button
@@ -252,7 +255,6 @@ function CreateAccountPage() {
           style={{ left: "10%", pointerEvents: "none" }}
         />
       </div>
-      
     </div>
   );
 }

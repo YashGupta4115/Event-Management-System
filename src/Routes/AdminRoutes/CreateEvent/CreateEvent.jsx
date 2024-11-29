@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./CreateEvent.css";
-import { dataContext } from "../../Contexts/dataContext";
+import { dataContext } from "../../../Contexts/dataContext";
 
 const CreateEvent = () => {
   const [eventName, setEventName] = useState();
