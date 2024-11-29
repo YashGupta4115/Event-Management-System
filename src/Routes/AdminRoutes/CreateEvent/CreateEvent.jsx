@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./CreateEvent.css";
+import { dataContext } from "../../Contexts/dataContext";
 
 const CreateEvent = () => {
   const [eventName, setEventName] = useState();
   const [eventDescription, setEventDescription] = useState();
   const [services, setServices] = useState("Full service");
   const [price, setPrice] = useState();
+  const { eventList, addNewEvent } = useContext(dataContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Event Created : ", {
-      eventName,
-      eventDescription,
-      services,
-      price,
-    });
+    console.log(eventList);
+    addNewEvent({ eventName, eventDescription, services, price });
+    console.log(eventList);
   };
   return (
     <div className="createEvent-container">

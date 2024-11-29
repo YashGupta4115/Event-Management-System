@@ -1,9 +1,9 @@
 .createEvent-container{
-    padding: 20px;
+    padding: 10px;
     margin : 0 auto;
-    width : 600px;
+    width : 400px;
     border-radius: 10px;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .title{
@@ -25,7 +25,7 @@ label{
 
 input,
 select{
-    height: 40px;
+    height: 30px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
