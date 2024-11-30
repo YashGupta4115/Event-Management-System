@@ -1,4 +1,4 @@
-
+/*
     .app {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -58,5 +58,78 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         cursor: pointer;
     }
+    */
+    .app {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 10rem;
+    }
     
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px; /* Adjust height as needed */
+        background-color: #f7f7f7;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .logo h1 {
+        font-size: 2.5rem; /* Adjust size for title */
+        color: #ff69b4;
+        margin: 0;
+    }
+    
+    .logo p {
+        font-size: 1.2rem; /* Adjust size for tagline */
+        color: #555; /* Optional: softer color for tagline */
+        margin: 5px 0 0 0;
+    }
+    
+    .header-links a {
+        margin: 0 10px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .search-section {
+        margin: 20px 0;
+    }
+    
+    .search-bar {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    .search-button {
+        padding: 10px 20px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .app1-background {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+        background-size: cover;
+        background-position: center;
+        color: black;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .card {
+        background-color: white;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+       
    

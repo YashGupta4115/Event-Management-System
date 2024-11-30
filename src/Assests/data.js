@@ -25,3 +25,10 @@ export const adminDashBoardCards2 = [
     { title: "Statistics", component: <LineCharts /> },
     { title: "Latest Events", component: <BarCharts /> },
 ];
+
+export const sampleEvents = [
+    { title: "Event 1", location: "Location 1", priceRange: "$50-$100" },
+    { title: "Event 2", location: "Location 2", priceRange: "$150-$200"},
+    { title: "Event 3", location: "Location 3", priceRange: "$250-$300"},
+    { title: "Event 4", location: "Location 4", priceRange: "$350-$400" },
+]
