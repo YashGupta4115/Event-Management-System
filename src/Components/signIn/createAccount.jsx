@@ -56,9 +56,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="firstName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.firstName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.firstName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -79,9 +81,11 @@ function CreateAccountPage() {
               <label
                 htmlFor="lastName"
                 className={`absolute left-3 transform transition-all 
-                  ${formData.lastName
-                    ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                    : 'top-3 text-base text-gray-400'} 
+                  ${
+                    formData.lastName
+                      ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                      : "top-3 text-base text-gray-400"
+                  } 
                   peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                   peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                   peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -105,9 +109,11 @@ function CreateAccountPage() {
             <label
               htmlFor="email"
               className={`absolute left-3 transform transition-all 
-                ${formData.email
-                  ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                  : 'top-3 text-base text-gray-400'} 
+                ${
+                  formData.email
+                    ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                    : "top-3 text-base text-gray-400"
+                } 
                 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                 peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                 peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
@@ -127,18 +133,20 @@ function CreateAccountPage() {
               onChange={handleChange}
               required
             />
-                <label
-                  htmlFor="password"
-                  className={`absolute left-3 transform transition-all 
-                    ${formData.password
-                      ? 'top-[-0.75rem] text-sm text-gray-400 bg-white px-1'
-                      : 'top-3 text-base text-gray-400'} 
+            <label
+              htmlFor="password"
+              className={`absolute left-3 transform transition-all 
+                    ${
+                      formData.password
+                        ? "top-[-0.75rem] text-sm text-gray-400 bg-white px-1"
+                        : "top-3 text-base text-gray-400"
+                    } 
                     peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                     peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                     peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
-                >
-                  Password
-                </label>
+            >
+              Password
+            </label>
           </div>
 
           <button
@@ -225,7 +233,6 @@ function CreateAccountPage() {
           style={{ left: "10%", pointerEvents: "none" }}
         />
       </div>
-      
     </div>
   );
 }

@@ -9,8 +9,8 @@ import App3 from "../../User/App3";
 import CreateAccountPage from "../../Components/signIn/createAccount";
 import LoginPage from "../../Components/signIn/LoginPage";
 import AdminDashboard from "../AdminDashboard/AdminDashboard";
-import CreateEvent from "../CreateEvent/CreateEvent";
 import CheckOutPage from "../../Components/CheckOut/CheckOutPage";
+import CreateEvent from "../AdminRoutes/CreateEvent/CreateEvent";
 
 const AppHome = () => {
   return (
@@ -25,9 +25,6 @@ const AppHome = () => {
         <Route path="/adminDashBoard" element={<AdminDashboard />} />
         <Route path="/add-event" element={<CreateEvent />} />
         <Route path="/check-out" element={<CheckOutPage />} />
-        {/* <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='*' element={<NotFound />} /> */}
       </Routes>
     </div>
   );
