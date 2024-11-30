@@ -32,6 +32,7 @@ const AppHome = () => {
         <Route path="/adminDashBoard" element={<AdminDashboard />} />
         <Route path="/add-event" element={<CreateEvent />} />
         <Route path="/check-out" element={<CheckOutPage />} />
+        <Route path="/sampleDesigns" element={<App3 />} />
       </Routes>
     </div>
   );
