@@ -412,7 +412,7 @@ function CreateAccountPage() {
             Already have an account?{" "}
             <span
               className="text-pink-400 font-semibold cursor-pointer hover:underline"
-              onClick={() => navigate("/sign-up")}
+              onClick={() => navigate("/login")}
             >
               Login
             </span>

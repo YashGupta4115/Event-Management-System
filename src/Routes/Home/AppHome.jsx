@@ -11,12 +11,15 @@ import LoginPage from "../../Components/signIn/LoginPage";
 import AdminDashboard from "../AdminDashboard/AdminDashboard";
 import CheckOutPage from "../../Components/CheckOut/CheckOutPage";
 import CreateEvent from "../AdminRoutes/CreateEvent/CreateEvent";
+import Forgetpass from "../../Components/signIn/Forgetpass";
+import Resetpass from "../../Components/signIn/Resetpass";
+import Popup from "../../Components/signIn/Popup";
 
 const AppHome = () => {
   const location = useLocation();
 
   // List of paths where the Navbar should not appear
-  const hideNavbarPaths = ["/login", "/sign-up"];
+  const hideNavbarPaths = ["/login", "/sign-up","/pop-up","/reset-pass","/forget-pass"];
 
   return (
     <div className="appHome-container">
@@ -27,11 +30,14 @@ const AppHome = () => {
         <Route path="/" element={<App1 />} />
         <Route path="/events" element={<App2 />} />
         <Route path="/booking-types" element={<App3 />} />
-        <Route path="/login" element={<CreateAccountPage />} />
-        <Route path="/sign-up" element={<LoginPage />} />
+        <Route path="/sign-up" element={<CreateAccountPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/adminDashBoard" element={<AdminDashboard />} />
         <Route path="/add-event" element={<CreateEvent />} />
         <Route path="/check-out" element={<CheckOutPage />} />
+        <Route path="/forget-pass" element={< Forgetpass/>} />
+        <Route path="/reset-pass" element={< Resetpass/>} />
+        <Route path="/pop-up" element={< Popup/>} />
       </Routes>
     </div>
   );
