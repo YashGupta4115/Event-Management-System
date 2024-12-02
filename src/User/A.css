@@ -1,0 +1,97 @@
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .background {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aviondubai.com%2Fthe-importance-of-choosing-the-right-venue-for-your-event-tips-from-an-event-management-company%2F&psig=AOvVaw05WgPbzOZRNmBIJXzcZoX5&ust=1732539094133000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiNsp-B9YkDFQAAAAAdAAAAABAW"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .content-sections {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
