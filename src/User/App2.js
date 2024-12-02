@@ -1,6 +1,7 @@
 import React from "react";
 import "./App2.css";
 import { useNavigate } from "react-router-dom";
+import { sampleEvents } from "../Assests/data";
 
 function App2() {
   const navigate = useNavigate();
@@ -23,16 +24,31 @@ function App2() {
       </div>
 
       <div className="app2-content-sections">
-        <div className="card" onClick={() => navigate('/booking-types')}>Samples</div>
-        <div className="card">Samples</div>
-        <div className="card">Samples</div>
+        {
+          sampleEvents.map((event) => {
+            return(
+              <div className="events-card-container">
+                <div className="events-card" onClick={() => navigate(`/event/${event.title}`)}>
+                  <div className="event-image">
+                    <img src={event.image} alt={event.title} />
+                  </div>
+                  <div className="event-details">
+                    <h3>{event.title}</h3>
+                    <p>{event.location}</p>
+                    <p>{event.priceRange}</p>
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
 
       <div className="card">About Us</div>
 
-      <div className="app2-content-sections">
-        <div className="card">Team Image</div>
-        <div className="card">
+      <div className="app2-content-sections-2">
+        <div className="app2-section2-card">Team Image</div>
+        <div className="app2-section2-card">
           Planora is an all-in-one event management platform designed to cater
           to every type of event and party. Whether you are planning a corporate
           conference, a wedding, a birthday celebration, a community festival, or

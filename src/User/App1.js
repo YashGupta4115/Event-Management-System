@@ -57,7 +57,7 @@ function App1() {
           <h1>PLANORA</h1>
           <p>Plan and Celebrate</p>
         </div>
-      </header> {/* Added missing header closing tag */}
+      </header> 
       <div className="search-section">
         <input
           type="text"
