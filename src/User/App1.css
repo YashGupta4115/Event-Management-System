@@ -70,7 +70,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 200px; /* Adjust height as needed */
+        height: 200px; 
         background-color: #f7f7f7;
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -78,14 +78,14 @@
     }
     
     .logo h1 {
-        font-size: 2.5rem; /* Adjust size for title */
+        font-size: 2.5rem; 
         color: #ff69b4;
         margin: 0;
     }
     
     .logo p {
-        font-size: 1.2rem; /* Adjust size for tagline */
-        color: #555; /* Optional: softer color for tagline */
+        font-size: 1.2rem; 
+        color: #555; 
         margin: 5px 0 0 0;
     }
     

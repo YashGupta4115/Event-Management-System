@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="app">
-      {/* Header Section */}
+      
       <header className="header">
         <div className="logo">
           <h1>PLANORA</h1>
@@ -17,7 +17,7 @@ function App() {
         </div>
       </header>
 
-      {/* Main Search Section */}
+    
       <div className="search-section">
         <input
           type="text"
@@ -27,14 +27,14 @@ function App() {
         <button className="search-button">Search</button>
       </div>
 
-      {/* Background Image and Content */}
+      
       <div className="background">
         <div className="overlay">
           <h2 className="subtitle">Explore Venues & Services</h2>
         </div>
       </div>
 
-      {/* Content Sections */}
+      
       <div className="content-sections">
         <div className="card">
           <h3>Events & Descriptions</h3>
@@ -47,7 +47,6 @@ function App() {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="footer">
         <p>© 2024 PLANORA Inc. All rights reserved.</p>
         <div className="social-icons">
