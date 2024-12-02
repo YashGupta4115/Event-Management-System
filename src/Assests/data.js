@@ -27,8 +27,14 @@ export const adminDashBoardCards2 = [
 ];
 
 export const sampleEvents = [
-    { title: "Event 1", location: "Location 1", priceRange: "$50-$100" },
-    { title: "Event 2", location: "Location 2", priceRange: "$150-$200"},
-    { title: "Event 3", location: "Location 3", priceRange: "$250-$300"},
-    { title: "Event 4", location: "Location 4", priceRange: "$350-$400" },
+    { title: "BirthDay",image:"../Assests/events/birthdays/pexels-nietjuh-796606.jpg", location: "Location 1", priceRange: "$50-$100" },
+    { title: "Wedding",image:"../Assests/events/getTogether/pexels-nicole-michalou-5775055.jpg.crdownload", location: "Location 2", priceRange: "$150-$200"},
+    { title: "Get Together",image:"../Assests/events/wedding/pexels-charm-andaya-205356019-11652315.jpg", location: "Location 3", priceRange: "$250-$300"},
+    { title: "Event 4",image:"/", location: "Location 4", priceRange: "$350-$400" },
+]
+
+export const eventDesigns = [
+    { title: "design1", image : "/", description: '1' },
+    { title: "design2", image : "/", description: '2' },
+    { title: "design3", image : "/", description: '3' }
 ]
