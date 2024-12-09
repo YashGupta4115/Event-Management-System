@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "../../Components/Navbar/Navbar";
 import App1 from "../../User/App1";
@@ -14,17 +14,29 @@ import CreateEvent from "../AdminRoutes/CreateEvent/CreateEvent";
 import Forgetpass from "../../Components/signIn/Forgetpass";
 import Resetpass from "../../Components/signIn/Resetpass";
 import Popup from "../../Components/signIn/Popup";
+import NavBarSmall from "../../Components/Navbar/NavBarSmall";
+import { screenContext } from "../../Contexts/screenContext";
 
 const AppHome = () => {
   const location = useLocation();
+  const { width } = useContext(screenContext);
 
   // List of paths where the Navbar should not appear
-  const hideNavbarPaths = ["/login", "/sign-up","/pop-up","/reset-pass","/forget-pass"];
+  const hideNavbarPaths = [
+    "/login",
+    "/sign-up",
+    "/pop-up",
+    "/reset-pass",
+    "/forget-pass",
+  ];
 
   return (
     <div className="appHome-container">
-      {/* Conditionally render Navbar */}
-      {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
+      {!hideNavbarPaths.includes(location.pathname) && width < "768" ? (
+        <NavBarSmall />
+      ) : (
+        <Navbar />
+      )}
 
       <Routes>
         <Route path="/" element={<App1 />} />
@@ -35,9 +47,9 @@ const AppHome = () => {
         <Route path="/adminDashBoard" element={<AdminDashboard />} />
         <Route path="/add-event" element={<CreateEvent />} />
         <Route path="/check-out" element={<CheckOutPage />} />
-        <Route path="/forget-pass" element={< Forgetpass/>} />
-        <Route path="/reset-pass" element={< Resetpass/>} />
-        <Route path="/pop-up" element={< Popup/>} />
+        <Route path="/forget-pass" element={<Forgetpass />} />
+        <Route path="/reset-pass" element={<Resetpass />} />
+        <Route path="/pop-up" element={<Popup />} />
       </Routes>
     </div>
   );

@@ -14,11 +14,11 @@ const Navbar = () => {
   const [isMyAccountOpen, setIsMyAccountOpen] = useState(false);
 
   const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
+    setIsSearchOpen((prev) => !prev);
   };
 
   const toggleAccountOpen = () => {
-    setIsMyAccountOpen(!isMyAccountOpen);
+    setIsMyAccountOpen((prev) => !prev);
   };
 
   return (
@@ -89,6 +89,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="navbar-bg-image"></div>
     </>
   );
 };

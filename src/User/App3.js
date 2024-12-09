@@ -8,13 +8,6 @@ const App3 = () => {
   const navigate = useNavigate();
   return (
     <div className="app">
-      <header className="header">
-        <div className="logo">
-          <h1>PLANORA</h1>
-          <p>Plan and Celebrate</p>
-        </div>
-      </header>
-
       <div className="search-section">
         <input
           type="text"

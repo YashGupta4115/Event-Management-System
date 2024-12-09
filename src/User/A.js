@@ -3,21 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      
-      <header className="header">
-        <div className="logo">
-          <h1>PLANORA</h1>
-          <p>Plan and Celebrate</p>
-        </div>
-        <div className="header-links">
-          <a href="#account">My Account</a>
-          <a href="#contact">Contact Us</a>
-          <a href="#login">Login/Register</a>
-        </div>
-      </header>
-
-    
+    <div className="app"> 
       <div className="search-section">
         <input
           type="text"

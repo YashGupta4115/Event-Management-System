@@ -9,8 +9,6 @@
     /* Prevent content overflow */
     position: relative;
     z-index: 2;
-    /* Ensures it is on top of the background image */
-    background-image: url('../../Assests/login.png');
 }
 
 /* Fixed navbar styling */
@@ -30,8 +28,7 @@
 
 /* Middle container styling */
 .AdminDashboard-mid-contianer {
-    margin-top: 10rem;
-    /* Space below the navbar */
+    /* margin-top : 5rem; */
     padding: 1rem;
     /* Add padding for better spacing */
     flex: 1;
@@ -48,22 +45,3 @@
     background-color: rgba(249, 249, 249, 0.9);
     /* Slight transparency for a layered look */
 }
-
-/* Background image styling
-.bgImage-all {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    /* Ensure it's below the dashboard container */
-    
-    /* Replace with your image path
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    /* Optional: adjust transparency
-    pointer-events: none;
-    /* Prevent interactions with the image
-}*/
