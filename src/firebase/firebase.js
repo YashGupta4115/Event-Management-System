@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import apiKey from '../Assests/apiKey.env';
 
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey: process.env.REACT_APP_API,
   authDomain: "event-management-system-80313.firebaseapp.com",
   projectId: "event-management-system-80313",
   storageBucket: "event-management-system-80313.firebasestorage.app",

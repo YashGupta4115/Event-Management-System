@@ -1,1 +1,0 @@
-const apiKey = process.env.AIzaSyBZ0X2wLRxxRAzwTjm9jaSzmn_cVeAAoQE;
