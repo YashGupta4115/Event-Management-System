@@ -20,12 +20,10 @@ function App2() {
       <div className="app2-content-sections">
         {
           sampleEvents.map((event) => {
+            let imgSrc = event.image;
             return(
               <div className="events-card-container">
-                <div className="events-card" onClick={() => navigate(`/event/${event.title}`)}>
-                  <div className="event-image">
-                    <img src={event.image} alt={event.title} />
-                  </div>
+                <div className="events-card" style={{backgroundImage:`url(${imgSrc})`}} onClick={() => navigate(`/event/${event.title}`)}>
                   <div className="event-details">
                     <h3>{event.title}</h3>
                     <p>{event.location}</p>
