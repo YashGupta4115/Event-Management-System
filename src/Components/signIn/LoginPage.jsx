@@ -327,15 +327,25 @@ function LoginPage() {
             Login
           </button>
 
-          {/* <p className="text-sm text-left mt-4 ml-5">
+          <p className="text-sm text-left mt-4 ml-5">
             Don't have an account?{" "}
             <span
               className="text-pink-400 font-semibold cursor-pointer hover:underline"
-              onClick={() => navigate("/create-account")}
+              onClick={() => navigate("/sign-up")}
             >
-              Create an Account
+              Sign up
             </span>
-          </p> */}
+          </p>
+          
+          <p className="text-sm text-left mt-4 ml-5">
+            Forget Password?{" "}
+            <span
+              className="text-pink-400 font-semibold cursor-pointer hover:underline"
+              onClick={() => navigate("/forget-pass")}
+            >
+              Reset
+            </span>
+          </p>
 
           {/* Social Login Section */}
           <div className="mt-4 ml-5">
