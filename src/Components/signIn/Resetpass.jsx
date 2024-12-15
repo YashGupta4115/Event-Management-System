@@ -308,6 +308,7 @@ function Resetpass() {
                     peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
                     peer-placeholder-shown:text-gray-400 peer-focus:top-[-0.75rem] 
                     peer-focus:text-sm peer-focus:text-gray-400 bg-white px-1`}
+                    
             >
               Confirm password
             </label>
@@ -316,6 +317,7 @@ function Resetpass() {
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
+            onClick={() => navigate("/pop-up")}
           >
             Change Password
           </button>
