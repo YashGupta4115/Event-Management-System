@@ -32,8 +32,8 @@ export const adminDashBoardCards2 = [
 
 export const sampleEvents = [
     { title: "BirthDay",image:event1Image1, location: "Location 1", priceRange: "$50-$100" },
-    { title: "Wedding",image:event2Image1, location: "Location 2", priceRange: "$150-$200"},
-    { title: "Get Together",image:event3Image1, location: "Location 3", priceRange: "$250-$300"},
+    { title: "Get Together",image:event2Image1, location: "Location 2", priceRange: "$150-$200"},
+    { title: "Wedding",image:event3Image1, location: "Location 3", priceRange: "$250-$300"},
     { title: "Event 4",image:event4Image1, location: "Location 4", priceRange: "$350-$400" },
 ]
 

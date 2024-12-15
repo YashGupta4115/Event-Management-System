@@ -230,6 +230,7 @@ function Forgetpass() {
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
+            onClick={() => navigate("/reset-pass")}
           >
             Send OTP
           </button>
