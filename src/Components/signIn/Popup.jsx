@@ -1,8 +1,13 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import logo from "../../Assests/logo.png";
-
+import { useNavigate } from "react-router-dom";
 function Popup({ onClose }) {
+  const navigate = useNavigate(); // Initialize the navigate hook
+
+  const handleClose = () => {
+    navigate("/login"); // Redirect to the check-out page
+  };
   return (
     <div className="fixed inset-0 bg-white bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-gray-400 rounded-lg shadow-lg w-4/5 md:w-2/3 lg:w-1/2 flex absolute top-10 left-1/2 transform -translate-x-1/2">
@@ -20,7 +25,7 @@ function Popup({ onClose }) {
         <div className="w-2/3 p-6 flex flex-col justify-center items-start relative">
           {/* Close Button */}
           <button
-          onClick={() => console.log("Close button clicked")}
+          onClick={handleClose}
           className="text-pink-700 hover:text-red-500 focus:outline-none"
         >
           <svg
