@@ -29,14 +29,12 @@ const AppHome = () => {
     "/reset-pass",
     "/forget-pass",
   ];
+  const shouldHideNavbar = hideNavbarPaths.includes(location.pathname);
 
   return (
     <div className="appHome-container">
-      {!hideNavbarPaths.includes(location.pathname) && width < "768" ? (
-        <NavBarSmall />
-      ) : (
-        <Navbar />
-      )}
+      {/* Only show Navbar when not in the specified paths */}
+      {!shouldHideNavbar && (width < 768 ? <NavBarSmall /> : <Navbar />)}
 
       <Routes>
         <Route path="/" element={<App1 />} />
