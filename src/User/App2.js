@@ -23,7 +23,7 @@ function App2() {
             let imgSrc = event.image;
             return(
               <div className="events-card-container">
-                <div className="events-card" style={{backgroundImage:`url(${imgSrc})`}} onClick={() => navigate(`/event/${event.title}`)}>
+                <div className="events-card" style={{backgroundImage:`url(${imgSrc})`}} onClick={() => navigate(`/booking-types`)}>
                   <div className="event-details">
                     <h3>{event.title}</h3>
                     <p>{event.location}</p>

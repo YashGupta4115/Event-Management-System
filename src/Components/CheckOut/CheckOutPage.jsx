@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./CheckOutPage.css"; // General styles
 import Navbar from "../Navbar/Navbar"; // Import the Navbar component
 import { useNavigate } from "react-router-dom";
+// import events from "../../User/App2"
 
 const CheckOutPage = () => {
   const navigate = useNavigate();
   const [items, setItems] = useState([
-    { id: 1, description: "Item 1", price: "₹1000" },
+    { id: 1, description: "Design 1", price: "$100" },
     // { id: 2, description: "Item 2", price: "₹XXXXX" },
     // { id: 3, description: "Item 3", price: "₹XXXXX" },
   ]);
@@ -24,14 +25,22 @@ const CheckOutPage = () => {
     // };
     // setItems([...items, newItem]);
   };
-
+  const handleAdd1 = () => {
+    navigate("/pop-up1");
+    // const newItem = {
+    //   id: items.length + 1,
+    //   description: `Item ${items.length + 1}`,
+    //   price: "₹1000",
+    // };
+    // setItems([...items, newItem]);
+  };
   const calculateTotal = () => {
-    return items.length * 1000; // Example: assume each item costs ₹1000
+    return items.length * 100; // Example: assume each item costs ₹1000
   };
 
   return (
     <div className="container">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="main">
         <div className="items">
           {items.map((item) => (
@@ -51,12 +60,13 @@ const CheckOutPage = () => {
         <div className="price-details">
           <h3>Price Details</h3>
           <p>
-            Price ({items.length} Items): ₹{calculateTotal()}
+            {/* Price ({items.length} Items): ₹{calculateTotal()} */}
+            Price ({items.length} Items): ${calculateTotal()}
           </p>
           <p>
-            <b>Amount Payable: ₹{calculateTotal()}</b>
+            <b>Amount Payable: ${calculateTotal()}</b>
           </p>
-          <button className="book-button">Book</button>
+          <button className="book-button" onClick={handleAdd1}>Book</button>
         </div>
       </div>
       <footer>

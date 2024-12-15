@@ -14,6 +14,7 @@ import CreateEvent from "../AdminRoutes/CreateEvent/CreateEvent";
 import Forgetpass from "../../Components/signIn/Forgetpass";
 import Resetpass from "../../Components/signIn/Resetpass";
 import Popup from "../../Components/signIn/Popup";
+import Popup1 from "../../Components/signIn/Popup1";
 import NavBarSmall from "../../Components/Navbar/NavBarSmall";
 import { screenContext } from "../../Contexts/screenContext";
 
@@ -55,6 +56,7 @@ const AppHome = () => {
         <Route path="/forget-pass" element={<Forgetpass />} />
         <Route path="/reset-pass" element={<Resetpass />} />
         <Route path="/pop-up" element={<Popup />} />
+        <Route path="/pop-up1" element={<Popup1 />} />
       </Routes>
     </div>
   );
