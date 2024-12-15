@@ -197,6 +197,8 @@ import React, { useState } from "react";
 import logo from "../../Assests/logo.png";
 import login from "../../Assests/login.png";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 
 function Resetpass() {
   const navigate = useNavigate();
@@ -327,6 +329,7 @@ function Resetpass() {
             <span
               className="text-pink-400 font-semibold cursor-pointer hover:underline"
               onClick={() => navigate("/login")}
+              
             >
               - Login
             </span>

@@ -404,6 +404,7 @@ function CreateAccountPage() {
           <button
             type="submit"
             className="bg-pink-500 text-white p-3 rounded-lg w-full font-semibold hover:bg-pink-400 mt-5"
+            onClick={() => navigate("/login")}
           >
             Create Account
           </button>
