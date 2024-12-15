@@ -33,8 +33,15 @@ const AppHome = () => {
 
   return (
     <div className="appHome-container">
-      {/* Only show Navbar when not in the specified paths */}
-      {!shouldHideNavbar && (width < 768 ? <NavBarSmall /> : <Navbar />)}
+      {!hideNavbarPaths.includes(location.pathname) ? (
+        width < "768" ? (
+          <NavBarSmall />
+        ) : (
+          <Navbar />
+        )
+      ) : (
+        ""
+      )}
 
       <Routes>
         <Route path="/" element={<App1 />} />
